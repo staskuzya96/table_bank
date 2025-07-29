@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="tariffs-table-block">
+        <h2 class="tariffs-header">Тарифы Онлайн-бухгалтерии</h2>
+        <div class="tariff-main-btns">
+            <div class="tariff-main-btns__toggle">
+                <div class="tariff-account-background"></div>
+                <button class="tariff-account-btn tariff-account-btn--active">Есть счёт в Точке</button>
+                <button class="tariff-account-btn">Нет счёта</button>
+            </div>
+            <div class="tariff-main-btns__switch">
+                <p class="tochka-switch__text">За месяц</p>
+                <label class="switch-container">
+                    <input type="checkbox" name="switch">
+                    <span class="switch-container__slider">
+                        <span class="switch-circle"></span>
+                    </span>
+                </label>
+                <p class="tochka-switch__text">За год</p>
+                <span class="tochka-switch__benefits tochka-switch__benefits--active">Выгода 31%</span>
+            </div>
+        </div>
+        <div class="tariffs-table tariffs-table--has-account">
+            <div class="tariffs-table-row tariffs-table-row--slipper-top annualy">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Кому подходит</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Базовая бухгалтерия</p>
+                    <p class="table__sliper-cell__price">0 ₽ всегда</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Бухгалтерия<br>«Доходы-расходы»</p>
+                    <p class="table__sliper-cell__price">13 900 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы минус расходы» без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Всё включено</p>
+                    <p class="table__sliper-cell__price">13 900 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» и патенте без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Бухгалтерия<br>с сотрудниками</p>
+                    <p class="table__sliper-cell__price">18 000 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» и патенте с сотрудниками</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row tariffs-table-row--slipper-top monthly" style="display: none;">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Кому подходит</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Базовая бухгалтерия</p>
+                    <p class="table__sliper-cell__price">0 ₽ всегда</p>
+                    <p class="table__sliper-cell__price--underprice"></p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Бухгалтерия<br>«Доходы-расходы»</p>
+                    <p class="table__sliper-cell__price">1 690 ₽ в месяц</p>
+                    <p class="table__sliper-cell__price--underprice">20 280 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы минус расходы» без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Всё включено</p>
+                    <p class="table__sliper-cell__price">1 690 ₽ в месяц</p>
+                    <p class="table__sliper-cell__price--underprice">20 280 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» и патенте без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Бухгалтерия<br>с сотрудниками</p>
+                    <p class="table__sliper-cell__price">2 500 ₽ за месяц</p>
+                    <p class="table__sliper-cell__price--underprice">30 000 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» и патенте с сотрудниками</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Бухгалтерский учёт</p>
+                </div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Расчёт налогов и взносов</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Уведомления о сроках уплаты</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Формирование
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                         отчётности
+                        <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Учёт валютных и эквайринговых операций</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Работа с любым банком</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Консультации профессиональных бухгалтеров</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Автоматическая сдача отчётности</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Проверка задолженностей и переплат по налогам и взносам</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Загрузка отчётов с маркетплейсов</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Загрузка отчётов 
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        с маркетплейсов по API
+                        <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Копилка на налоги
+                        <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Для ИП без сотрудников на УСН «Доходы»
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Кадровый учёт</p>
+                </div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Расчёт выплат и взносов 
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        по сотрудникам
+                        <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Зарплаты, больничные, отпускные, премии, выплаты при увольнении, ежемесячные взносы в фонды и НДФЛ
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row ">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Подготовка кадровых 
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                    документов
+                    <span class="info__container-cell__info">
+                    </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Трудовой договор, заявление и приказ на приём, личная карточка, отчёт ЕФС-1, заявление и приказ о предоставлении отпуска, начислении премии и увольнении
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">Подготовка кадровой отчётности для СФР</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row tariffs-table-row--slipper-bottom">
+                <div class="table__sliper-cell">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button cell-button--active" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="tariffs-table tariffs-table--no-account" style="display: none;">
+            <div class="tariffs-table-row--noAccount tariffs-table-row--slipper-top">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Кому подходит</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Всё включено</p>
+                    <p class="table__sliper-cell__price">15 900 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы» и патенте без сотрудников</p>
+                </div>
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__tittle">Бухгалтерия «Доходы-расходы»</p>
+                    <p class="table__sliper-cell__price">15 900 ₽ за год</p>
+                    <p class="table__sliper-cell__info">Для ИП на УСН «Доходы минус расходы» без сотрудников</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price">Бухгалтерский учёт</p>
+                </div>
+                <div class="table__sliper-cell"></div>
+                <div class="table__sliper-cell"></div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Расчёт налогов и взносов
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Уведомления о сроках уплаты
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Формирование
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                         отчётности
+                        <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Учёт валютных и эквайринговых операций
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Работа с любым банком
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Консультации профессиональных бухгалтеров
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Автоматическая сдача отчётности
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Проверка задолженностей 
+                    </p>
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        и переплат по налогам и взносам
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Загрузка отчётов с маркетплейсов
+                    </p>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount">
+                <div class="table__sliper-cell">
+                    <p class="table__sliper-cell__price table__sliper-cell__price--small">
+                        Загрузка отчётов с маркетплейсов по API
+                    <span class="info__container-cell__info">
+                        </span>
+                    </p>
+                    <div class="table__sliper-cell__price--info__container">
+                        <p class="table__sliper-cell__price--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="check-mark">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--check">
+                    <p class="table__sliper-cell--check__dash">—</p>
+                </div>
+            </div>
+            <div class="tariffs-table-row--noAccount tariffs-table-row--slipper-bottom">
+                <div class="table__sliper-cell">
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+                <div class="table__sliper-cell table__sliper-cell--button">
+                    <button class="cell-button" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                        <a href="#form-account" target="_self">Подключить</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tariffs-table-block--mobile">
+        <h2 class="tariffs-header">Тарифы Онлайн-бухгалтерии</h2>
+        <div class="tariff-mobile-btns">
+            <div class="tariff-mobile-btns__toggle">
+                <a class="tariff-mobile-account-btn tariff-mobile-account-btn--active">Есть счёт в Точке</a>
+                <a class="tariff-mobile-account-btn">Нет счёта</a>
+            </div>
+            <div class="tariff-mobile-indicator-wrap">
+                <span class="tariff-mobile-indicator__indicator"></span>
+            </div>
+        </div>
+        <div class="mobile-tabs-has-account">
+            <button class="has-account__mobile-tab has-account__mobile-tab--active" data-target="all-inclusive" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Всё включено
+            </button>
+            <button class="has-account__mobile-tab" data-target="account-income" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Бухгалтерия «Доходы-расходы»
+            </button>
+            <button class="has-account__mobile-tab" data-target="account-staff" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Бухгалтерия с сотрудниками
+            </button>
+            <button class="has-account__mobile-tab" data-target="account-base" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Базовая бухгалтерия
+            </button>
+        </div>
+        <div class="mobile-undertabs-has-account all-inclusive">
+            <div class="has-account__mobile-undertab tab__annualy">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__price">13 900 ₽</p>
+                <p class="has-account__annualy__benefits">Выгода 31%</p>
+            </div>
+            <div class="has-account__mobile-undertab">
+                <p class="has-account__annualy__tittle">За месяц</p>
+                <p class="has-account__annualy__price">1 690 ₽</p>
+                <p class="has-account__annualy__benefits">Далее — 1 690 ₽ в месяц</p>
+            </div>
+        </div>
+        <div class="mobile-undertabs-has-account account-income">
+            <div class="has-account__mobile-undertab tab__annualy">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__price">13 900 ₽</p>
+                <p class="has-account__annualy__benefits">Выгода 31%</p>
+            </div>
+            <div class="has-account__mobile-undertab">
+                <p class="has-account__annualy__tittle">За месяц</p>
+                <p class="has-account__annualy__price">1 690 ₽</p>
+                <p class="has-account__annualy__benefits">20 280 ₽ за год</p>
+            </div>
+        </div>
+        <div class="mobile-undertabs-has-account account-staff">
+            <div class="has-account__mobile-undertab tab__annualy">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__price">18 000 ₽</p>
+                <p class="has-account__annualy__benefits">Выгода 31%</p>
+            </div>
+            <div class="has-account__mobile-undertab">
+                <p class="has-account__annualy__tittle">За месяц</p>
+                <p class="has-account__annualy__price">2 500 ₽</p>
+                <p class="has-account__annualy__benefits">30 000 ₽ за год</p>
+            </div>
+        </div>
+        <div class="mobile-undertabs-has-account account-base">
+            <div class="has-account__mobile-undertab tab__annualy"  style="display: none;">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__price">18 000 ₽</p>
+                <p class="has-account__annualy__benefits">Выгода 31%</p>
+            </div>
+            <div class="has-account__mobile-undertab tab__monthly">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__price"></p>
+                <p class="has-account__annualy__benefits">0 ₽</p>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table all-inclusive">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы» и патенте без сотрудников
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Копилка на налоги
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Для ИП без сотрудников на УСН «Доходы»
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+            </div>
+            <div  class="mobile-tariffs-table__personnel">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Кадровый учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт выплат и взносов по сотрудникам
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Зарплаты, больничные, отпускные, премии, выплаты при увольнении, ежемесячные взносы в фонды и НДФЛ
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровых документов
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Трудовой договор, заявление и приказ на приём, личная карточка, отчёт ЕФС-1, заявление и приказ о предоставлении отпуска, начислении премии и увольнении
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровой отчётности для СФР
+                        </h3>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table account-income">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы минус расходы» без сотрудников
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Копилка на налоги
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Для ИП без сотрудников на УСН «Доходы»
+                        </p>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-tariffs-table__personnel">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Кадровый учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт выплат и взносов по сотрудникам
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Зарплаты, больничные, отпускные, премии, выплаты при увольнении, ежемесячные взносы в фонды и НДФЛ
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровых документов
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Трудовой договор, заявление и приказ на приём, личная карточка, отчёт ЕФС-1, заявление и приказ о предоставлении отпуска, начислении премии и увольнении
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровой отчётности для СФР
+                        </h3>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table account-staff">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы» и патенте с сотрудниками
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Копилка на налоги
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Для ИП без сотрудников на УСН «Доходы»
+                        </p>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-tariffs-table__personnel">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Кадровый учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт выплат и взносов по сотрудникам
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Зарплаты, больничные, отпускные, премии, выплаты при увольнении, ежемесячные взносы в фонды и НДФЛ
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровых документов
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Трудовой договор, заявление и приказ на приём, личная карточка, отчёт ЕФС-1, заявление и приказ о предоставлении отпуска, начислении премии и увольнении
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровой отчётности для СФР
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table account-base">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы» без сотрудников
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Копилка на налоги
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Для ИП без сотрудников на УСН «Доходы»
+                        </p>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-tariffs-table__personnel">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Кадровый учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт выплат и взносов по сотрудникам
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Зарплаты, больничные, отпускные, премии, выплаты при увольнении, ежемесячные взносы в фонды и НДФЛ
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровых документов
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Трудовой договор, заявление и приказ на приём, личная карточка, отчёт ЕФС-1, заявление и приказ о предоставлении отпуска, начислении премии и увольнении
+                        </p>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Подготовка кадровой отчётности для СФР
+                        </h3>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- NO account -->
+        <div class="mobile-tabs-no-account">
+            <button class="no-account__mobile-tab no-account__mobile-tab--active" data-target="all-inclusive" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Всё включено
+            </button>
+            <button class="no-account__mobile-tab" data-target="account-income" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                Бухгалтерия «Доходы-расходы»
+            </button>
+        </div>
+        <div class="mobile-undertabs-no-account">
+            <div class="has-account__mobile-undertab tab__monthly">
+                <p class="has-account__annualy__tittle">За год</p>
+                <p class="has-account__annualy__benefits">15 900 ₽</p>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table-no-account all-inclusive">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы» и патенте без сотрудников
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-tariffs-table-no-account account-income">
+            <div class="mobile-tariffs-table__who">
+                <h3 class="mobile-tariffs-table__header">
+                    Кому подходит
+                </h3>
+                <p class="mobile-tariffs-table__text">
+                    Для ИП на УСН «Доходы минус расходы» без сотрудников
+                </p>
+            </div>
+            <div class="mobile-tariffs-table__account">
+                <div class="mobile-tariffs-table__account-header">
+                    <h3 class="mobile-tariffs-table__account-header__header">
+                        Бухгалтерский учёт
+                    </h3>
+                    <span class="mobile-tariffs-table__account-header__dropdown">
+                        <img src="https://avatars.mds.yandex.net/get-lpc/12602567/740d9b0b-1448-4d6f-975d-ccca2aa1d4dd/orig?width=24&height=24" alt="dropdown" class="mobile-tariffs-table__account-header__dropdown-icon">
+                    </span>
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Расчёт налогов и взносов
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Уведомления о сроках уплаты
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Формирование отчётности
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Налоговая декларация, КУДиР, уведомления по ЕНП
+                        </p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Учёт валютных и эквайринговых операций
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Работа с любым банком
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Консультации профессиональных бухгалтеров
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Автоматическая сдача отчётности
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Проверка задолженностей и переплат по налогам и взносам
+                        </h3>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/8703ad1d-50aa-4f2e-814b-39f511ea1c7a/orig?width=24&height=24" alt="check-mark" class="table__account-text__check">
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов
+                        </h3>
+                    </div>
+                    —
+                </div>
+                <div class="mobile-tariffs-table__account-text">
+                    <div class="table__account-text__header">
+                        <h3 class="table__account-text__header__header">
+                            Загрузка отчётов с маркетплейсов по API
+                        </h3>
+                        <span class="info__container-cell__info">
+                        </span>
+                        <p class="mobile-tariffs-table__account--info__container__text">
+                            Wildberries и Ozon
+                        </p>
+                    </div>
+                    —
+                </div>
+            </div>
+            <div  class="mobile-button">
+                <button class="mobile-button__btn" onclick="_targetadsTag('event', {'event_type':'click','event_category':'button','event_name':'market_click_button_connect_2'})">
+                    <a href="#form-account" target="_self">Подключить</a>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
